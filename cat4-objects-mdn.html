@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 4</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    const cat = {
+      name : 'Bertie',
+      breed : 'Cymric',
+      color : 'white',
+      greeting: function() {
+        console.log('Meow!');
+      }
+    }
+
+    function CreateCat(name, breed, color) {
+      this.name= name;
+      this.breed= breed;
+      this.color= color;
+      this.greeting = function() {
+        console.log(`I am ${name}, my breed is ${breed} and my color is ${color}`)
+      };
+
+    }
+
+    const lobito = new CreateCat("Lobito", "siberiano", "gris");
+    const gamba = new CreateCat("Gamba", "tigrés", "naranjo");
+
+  </script>
+
+</html>

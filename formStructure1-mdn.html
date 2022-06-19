@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!---
+Form structure 1
+
+In this task we want you to structure the provided form features:
+
+- Separate out the first two and second two form fields into two distinct
+ containers, each with a descriptive legend (use "Personal details" for
+  the first two, and "Comment information" for the second two).
+- Mark up each text label with an appropriate element so that it is semantically 
+associated with its respective form field.
+- Add a suitable set of structural elements around the label/field pairs 
+to separate them out.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Form structure: Task 1</title>
+    <style>
+      body {
+        background-color: #fff;
+        color: #333;
+        font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+        padding: 1em;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      ul {
+         
+          list-style: none;
+      }
+      label {
+        display: inline-block;
+        width: 90px;
+        text-align: right; 
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+          <legend>Personal details</legend>
+          <ul>
+              <li>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name">
+              </li>
+              <li>
+                  <label for="age">Age:</label>
+                  <input type="number" id="age" name="age">
+              </li>
+          </ul>
+      </fieldset>
+
+      <fieldset>
+          <legend>Comment information</legend>
+          <ul>
+              <li>
+                  <label for="comment">Comment:</label>
+                  <input type="text" id="comment" name="comment">
+              </li>
+              <li>
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email">
+              </li>
+          </ul>
+      </fieldset>
+    </form>
+  </body>
+
+</html>

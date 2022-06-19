@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Conditionals: Task 1</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview"></section>
+
+  </body>
+  
+  
+  <script>
+    let season = 'summer';
+    let response;
+
+
+
+       // Add your code here
+  season === "summer" ? response = "yes it's summer" : response = "no, it is not summer";
+// not sure if they wanted to do next step in if-else, switch or ternary..
+ // 
+ // season === "winter" ? response = "yes, it's winter and cold" : response = "no, it's not winter, i miss snow";
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+
+    let para1 = document.createElement('p');
+    para1.textContent = response;
+    section.appendChild(para1);
+    
+  </script>
+
+</html>

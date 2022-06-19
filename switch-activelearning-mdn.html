@@ -1,0 +1,32 @@
+const select = document.querySelector('select');
+const html = document.querySelector('.output');
+
+select.addEventListener('change', () => {
+  const choice = select.value;
+
+  // ADD SWITCH STATEMENT
+switch(choice) {
+case "white":
+update("white", "green");
+break;
+case "black":
+update("black", "greenyellow");
+break
+case "purple":
+update("purple", "white");
+break;
+case "yellow":
+update("yellow", "black");
+break;
+case "psychedelic":
+update("greenyellow","pink");
+break;
+default:
+update("grey", "brown");
+}
+});
+
+function update(bgColor, textColor) {
+  html.style.backgroundColor = bgColor;
+  html.style.color = textColor;
+}
